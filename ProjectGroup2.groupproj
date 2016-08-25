@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{30061ADA-6B62-43CE-9218-19ED323A7B22}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Exemplo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="AgendaMedica\ExemploEntity.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Exemplo">
+        <MSBuild Projects="Exemplo.dproj"/>
+    </Target>
+    <Target Name="Exemplo:Clean">
+        <MSBuild Projects="Exemplo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Exemplo:Make">
+        <MSBuild Projects="Exemplo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ExemploEntity">
+        <MSBuild Projects="AgendaMedica\ExemploEntity.dproj"/>
+    </Target>
+    <Target Name="ExemploEntity:Clean">
+        <MSBuild Projects="AgendaMedica\ExemploEntity.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExemploEntity:Make">
+        <MSBuild Projects="AgendaMedica\ExemploEntity.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Exemplo;ExemploEntity"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Exemplo:Clean;ExemploEntity:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Exemplo:Make;ExemploEntity:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

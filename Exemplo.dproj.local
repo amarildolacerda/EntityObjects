@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2016/08/24 20:41:27.565,=C:\Users\amari\Documents\Embarcadero\Studio\Projects\Unit9.pas</Transaction>
-    <Transaction>2016/08/24 20:41:52.023,C:\Fontes\Free\EntityOjects\uExemplo.dfm=C:\Users\amari\Documents\Embarcadero\Studio\Projects\Unit9.dfm</Transaction>
-    <Transaction>2016/08/24 20:41:52.023,C:\Fontes\Free\EntityOjects\uExemplo.pas=C:\Users\amari\Documents\Embarcadero\Studio\Projects\Unit9.pas</Transaction>
-    <Transaction>2016/08/24 20:41:56.200,C:\Fontes\Free\EntityOjects\Exemplo.dproj=C:\Users\amari\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
-    <Transaction>2016/08/24 20:43:03.695,=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
-    <Transaction>2016/08/24 20:43:53.783,C:\Fontes\Free\EntityOjects\EntityObjects.Firedac.pas=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
-    <Transaction>2016/08/24 20:44:30.268,=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
-    <Transaction>2016/08/24 20:44:43.126,C:\Fontes\Free\EntityOjects\EntityObjects.Intf.pas=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
-    <Transaction>2016/08/24 20:46:25.271,C:\Fontes\Free\EntityOjects\EntityObjects.Base.pas=C:\Fontes\Free\EntityOjects\EntityObjects.Intf.pas</Transaction>
-    <Transaction>2016/08/24 20:55:18.432,=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
-    <Transaction>2016/08/24 20:55:36.625,C:\Fontes\Free\EntityOjects\EntityObjects.pas=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
-    <Transaction>2016/08/24 21:02:44.288,=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
-    <Transaction>2016/08/24 21:03:07.863,C:\Fontes\Free\EntityOjects\EntityObjects.DbxExpress.pas=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
-    <Transaction>2016/08/24 21:10:39.915,C:\Fontes\Free\EntityOjects\EntityObjects.inc=</Transaction>
-    <Transaction>2016/08/24 21:11:10.798,=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
-    <Transaction>2016/08/24 21:11:39.646,C:\Fontes\Free\EntityOjects\EntityObjects.ADO.pas=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
-    <Transaction>2016/08/24 21:13:43.001,=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
-    <Transaction>2016/08/24 21:13:57.393,C:\Fontes\Free\EntityOjects\EntityObjects.SQLDb.pas=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
-    <Transaction>2016/08/24 22:05:39.554,=C:\Fontes\Free\EntityOjects\Exemplo.todo</Transaction>
+	<Transactions>
+    <Transaction>2016/08/24 20:41:27.000.565,=C:\Users\amari\Documents\Embarcadero\Studio\Projects\Unit9.pas</Transaction>
+    <Transaction>2016/08/24 20:41:52.000.023,C:\Users\amari\Documents\Embarcadero\Studio\Projects\Unit9.pas=C:\Fontes\Free\EntityOjects\uExemplo.pas</Transaction>
+    <Transaction>2016/08/24 20:41:52.000.023,C:\Users\amari\Documents\Embarcadero\Studio\Projects\Unit9.dfm=C:\Fontes\Free\EntityOjects\uExemplo.dfm</Transaction>
+    <Transaction>2016/08/24 20:41:56.000.200,C:\Users\amari\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Fontes\Free\EntityOjects\Exemplo.dproj</Transaction>
+    <Transaction>2016/08/24 20:43:03.000.695,=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
+    <Transaction>2016/08/24 20:43:53.000.783,C:\Fontes\Free\EntityOjects\Unit1.pas=C:\Fontes\Free\EntityOjects\EntityObjects.Firedac.pas</Transaction>
+    <Transaction>2016/08/24 20:44:30.000.268,=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
+    <Transaction>2016/08/24 20:44:43.000.126,C:\Fontes\Free\EntityOjects\Unit1.pas=C:\Fontes\Free\EntityOjects\EntityObjects.Intf.pas</Transaction>
+    <Transaction>2016/08/24 20:46:25.000.271,C:\Fontes\Free\EntityOjects\EntityObjects.Intf.pas=C:\Fontes\Free\EntityOjects\EntityObjects.Base.pas</Transaction>
+    <Transaction>2016/08/24 20:55:18.000.432,=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
+    <Transaction>2016/08/24 20:55:36.000.625,C:\Fontes\Free\EntityOjects\Unit1.pas=C:\Fontes\Free\EntityOjects\EntityObjects.pas</Transaction>
+    <Transaction>2016/08/24 21:02:44.000.288,=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
+    <Transaction>2016/08/24 21:03:07.000.863,C:\Fontes\Free\EntityOjects\Unit1.pas=C:\Fontes\Free\EntityOjects\EntityObjects.DbxExpress.pas</Transaction>
+    <Transaction>2016/08/24 21:10:39.000.915,C:\Fontes\Free\EntityOjects\EntityObjects.inc=</Transaction>
+    <Transaction>2016/08/24 21:11:10.000.798,=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
+    <Transaction>2016/08/24 21:11:39.000.646,C:\Fontes\Free\EntityOjects\Unit1.pas=C:\Fontes\Free\EntityOjects\EntityObjects.ADO.pas</Transaction>
+    <Transaction>2016/08/24 21:13:43.000.001,=C:\Fontes\Free\EntityOjects\Unit1.pas</Transaction>
+    <Transaction>2016/08/24 21:13:57.000.393,C:\Fontes\Free\EntityOjects\Unit1.pas=C:\Fontes\Free\EntityOjects\EntityObjects.SQLDb.pas</Transaction>
+    <Transaction>2016/08/24 22:05:39.000.554,=C:\Fontes\Free\EntityOjects\Exemplo.todo</Transaction>
   </Transactions>
 </BorlandProject>
