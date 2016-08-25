@@ -32,9 +32,10 @@
   =  sem alterações significativas
 
   24/08/2016  =    por: Amarildo Lacerda
-                  feito separação do codigo por UNIT para permitir acoplar
-                  drivers de banco de dados diverentes na mesma estrutura;
-                  não foi adicionado novo recurso (somente preparação)
+                   feito separação do codigo por UNIT para permitir acoplar
+                   drivers de banco de dados diverentes na mesma estrutura;
+                   não foi adicionado novo recurso (somente preparação)
+              *    Alterado o construtor
               *   removido memoryleaks
               +   incluido SetConnectionsString (interfaced)
 }
@@ -63,7 +64,7 @@ type
     FTransaction: TSQLTransaction;
     function TypeOfDb(const Str: string): TSqlDbType;
   public
-    constructor Create(const _FConnectionString: string);
+    constructor Create();
     destructor Destroy; override;
     function ExecuteCommand(const command: string; openQuery: Boolean)
       : TDataSet; override;
@@ -90,10 +91,9 @@ begin
   Result := sdtUnknown;
 end;
 
-constructor TEntityFConnectionSqlDb.Create(const _FConnectionString: string);
+constructor TEntityFConnectionSqlDb.Create();
 begin
   inherited Create;
-  SetFConnectionString(_FConnectionString);
 end;
 
 procedure TEntityFConnectionSqlDb.SetFConnectionString

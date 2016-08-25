@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="8">
+      <Unit0>
+        <Filename Value="ExemploEntity.dpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="13" Y="11"/>
+        <UsageCount Value="72"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="Principal.pas"/>
+        <ComponentName Value="frmPrincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="196"/>
+        <CursorPos X="9" Y="196"/>
+        <UsageCount Value="37"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="Principal.dfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="123"/>
+        <CursorPos X="17" Y="147"/>
+        <UsageCount Value="5"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="EntityObjects.pas"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="988"/>
+        <CursorPos X="16" Y="1002"/>
+        <UsageCount Value="37"/>
+        <Bookmarks Count="2">
+          <Item0 Y="983" ID="1"/>
+          <Item1 X="3" Y="470" ID="2"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="ModeloCadastroPessoas.pas"/>
+        <ComponentName Value="frmModeloCadastroPessoas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="33"/>
+        <CursorPos X="15" Y="49"/>
+        <UsageCount Value="36"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="Dados.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="68"/>
+        <CursorPos X="3" Y="90"/>
+        <UsageCount Value="36"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="CadastroMedicos.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="6"/>
+        <CursorPos X="25" Y="30"/>
+        <UsageCount Value="17"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="CadastroPacientes.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="6"/>
+        <CursorPos X="27" Y="30"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit7>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="268" Column="16" TopLine="245"/>
+      </Position1>
+      <Position2>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="359" Column="18" TopLine="336"/>
+      </Position2>
+      <Position3>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="390" Column="29" TopLine="367"/>
+      </Position3>
+      <Position4>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="400" Column="29" TopLine="377"/>
+      </Position4>
+      <Position5>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="1081" Column="45" TopLine="1058"/>
+      </Position5>
+      <Position6>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="1082" Column="63" TopLine="1059"/>
+      </Position6>
+      <Position7>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="1197" Column="30" TopLine="1174"/>
+      </Position7>
+      <Position8>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="1199" Column="56" TopLine="1176"/>
+      </Position8>
+      <Position9>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="1204" Column="79" TopLine="1182"/>
+      </Position9>
+      <Position10>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="1206" Column="56" TopLine="1184"/>
+      </Position10>
+      <Position11>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="1237" Column="49" TopLine="1214"/>
+      </Position11>
+      <Position12>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="57" TopLine="57"/>
+      </Position12>
+      <Position13>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="152" TopLine="126"/>
+      </Position13>
+      <Position14>
+        <Filename Value="CadastroMedicos.pas"/>
+        <Caret Line="30" Column="3" TopLine="6"/>
+      </Position14>
+      <Position15>
+        <Filename Value="CadastroMedicos.pas"/>
+        <Caret Line="33" Column="5" TopLine="6"/>
+      </Position15>
+      <Position16>
+        <Filename Value="ModeloCadastroPessoas.pas"/>
+        <Caret Line="217" Column="5" TopLine="190"/>
+      </Position16>
+      <Position17>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="1187" Column="3" TopLine="1188"/>
+      </Position17>
+      <Position18>
+        <Filename Value="EntityObjects.pas"/>
+      </Position18>
+      <Position19>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="306" Column="38" TopLine="294"/>
+      </Position19>
+      <Position20>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="1004" Column="29" TopLine="982"/>
+      </Position20>
+      <Position21>
+        <Filename Value="Principal.pas"/>
+        <Caret Line="89" Column="37" TopLine="75"/>
+      </Position21>
+      <Position22>
+        <Filename Value="Principal.pas"/>
+        <Caret Line="216" Column="14" TopLine="202"/>
+      </Position22>
+      <Position23>
+        <Filename Value="EntityObjects.pas"/>
+        <Caret Line="1012" Column="29" TopLine="986"/>
+      </Position23>
+      <Position24>
+        <Filename Value="Dados.pas"/>
+        <Caret Line="80" Column="12" TopLine="63"/>
+      </Position24>
+      <Position25>
+        <Filename Value="Principal.pas"/>
+        <Caret Line="216" Column="14" TopLine="202"/>
+      </Position25>
+      <Position26>
+        <Filename Value="Principal.pas"/>
+        <Caret Line="218" Column="15" TopLine="202"/>
+      </Position26>
+      <Position27>
+        <Filename Value="Principal.pas"/>
+        <Caret Line="214" Column="35" TopLine="204"/>
+      </Position27>
+      <Position28>
+        <Filename Value="Principal.pas"/>
+        <Caret Line="11" Column="3"/>
+      </Position28>
+      <Position29>
+        <Filename Value="Principal.pas"/>
+        <Caret Line="219" Column="15" TopLine="205"/>
+      </Position29>
+      <Position30>
+        <Filename Value="Dados.pas"/>
+        <Caret Line="31" Column="39" TopLine="14"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <Watches Count="1">
+      <Item1>
+        <Expression Value="hasValues"/>
+      </Item1>
+    </Watches>
+  </Debugging>
+</CONFIG>

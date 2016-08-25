@@ -1,0 +1,206 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 270
+  Top = 150
+  BorderStyle = bsDialog
+  ClientHeight = 229
+  ClientWidth = 520
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = True
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblMedico: TLabel
+    Left = 208
+    Top = 80
+    Width = 38
+    Height = 13
+    Cursor = crHandPoint
+    Caption = '&Medico:'
+    Color = clBtnFace
+    FocusControl = edtMedico
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsUnderline]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+    OnClick = lblMedicoClick
+  end
+  object lblPaciente: TLabel
+    Left = 208
+    Top = 136
+    Width = 45
+    Height = 13
+    Cursor = crHandPoint
+    Caption = '&Paciente:'
+    Color = clBtnFace
+    FocusControl = edtPaciente
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsUnderline]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+    OnClick = lblPacienteClick
+  end
+  object lblHorario: TLabel
+    Left = 216
+    Top = 32
+    Width = 42
+    Height = 13
+    Caption = '&Horarios:'
+    Color = clBtnFace
+    ParentColor = False
+    Transparent = False
+  end
+  object lbl_Disponivel: TLabel
+    Left = 264
+    Top = 16
+    Width = 58
+    Height = 13
+    Caption = '(disponiveis)'
+    Color = clBtnFace
+    ParentColor = False
+    Transparent = False
+  end
+  object Label1: TLabel
+    Left = 408
+    Top = 16
+    Width = 52
+    Height = 13
+    Caption = '(marcados)'
+    Color = clBtnFace
+    ParentColor = False
+    Transparent = False
+  end
+  object btnFiltraMedico: TSpeedButton
+    Tag = 1
+    Left = 482
+    Top = 76
+    Width = 23
+    Height = 22
+    Hint = 'Filtra consultas desse medico'
+    AllowAllUp = True
+    GroupIndex = 3
+    Enabled = False
+    Flat = True
+    Glyph.Data = {
+      42050000424D4205000000000000360000002800000016000000130000000100
+      1800000000000C050000CE0E0000C40E00000000000000000000B5C2D7B5C2D7
+      B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2
+      D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D70000B5C2
+      D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5
+      C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7
+      0000B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7
+      B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2
+      D7B5C2D70000B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D70000
+      00000000000000000000B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5
+      C2D7B5C2D7B5C2D70000B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5
+      C2D7000000808000808000000000B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7
+      B5C2D7B5C2D7B5C2D7B5C2D70000B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7
+      B5C2D7B5C2D7000000808000808000000000B5C2D7B5C2D7B5C2D7B5C2D7B5C2
+      D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D70000B5C2D7B5C2D7B5C2D7B5C2D7B5C2
+      D7B5C2D7B5C2D7B5C2D7000000FFFFFFC0C0C0000000B5C2D7B5C2D7B5C2D7B5
+      C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D70000B5C2D7B5C2D7B5C2D7B5
+      C2D7B5C2D7B5C2D7B5C2D7B5C2D7000000FFFFFFC0C0C0000000B5C2D7B5C2D7
+      B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D70000B5C2D7B5C2D7
+      B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7000000C0C0C0C0C0C0C0C0C08080000000
+      00B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D70000B5C2
+      D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7000000808000C0C0C0C0C0C0C0C0C080
+      8000808000000000B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7
+      0000B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7000000808000C0C0C0FFFFFFC0C0C0
+      C0C0C0C0C0C0808000808000000000B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2
+      D7B5C2D70000B5C2D7B5C2D7B5C2D7B5C2D7000000808000C0C0C0FFFFFFC0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0808000808000000000B5C2D7B5C2D7B5C2D7B5
+      C2D7B5C2D7B5C2D70000B5C2D7B5C2D7B5C2D7000000808000C0C0C0FFFFFFFF
+      FFFFFFFFFFC0C0C0C0C0C0C0C0C0C0C0C0808000808000808000000000B5C2D7
+      B5C2D7B5C2D7B5C2D7B5C2D70000B5C2D7B5C2D7B5C2D7000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00B5C2D7B5C2D7B5C2D7B5C2D7B5C2D70000B5C2D7B5C2D7B5C2D7B5C2D7B5C2
+      D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5
+      C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D70000B5C2D7B5C2D7B5C2D7B5
+      C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7
+      B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D70000B5C2D7B5C2D7
+      B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2
+      D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D70000B5C2
+      D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5
+      C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7
+      0000B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7
+      B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2D7B5C2
+      D7B5C2D70000}
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object edtMedico: TEdit
+    Left = 264
+    Top = 77
+    Width = 217
+    Height = 21
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object edtPaciente: TEdit
+    Left = 264
+    Top = 136
+    Width = 241
+    Height = 21
+    ReadOnly = True
+    TabOrder = 3
+  end
+  object cbxHorario: TComboBox
+    Left = 264
+    Top = 32
+    Width = 97
+    Height = 21
+    Style = csDropDownList
+    Enabled = False
+    TabOrder = 0
+  end
+  object btGravar: TButton
+    Left = 432
+    Top = 184
+    Width = 75
+    Height = 25
+    Caption = '&Gravar'
+    TabOrder = 5
+    OnClick = btGravarClick
+  end
+  object btVerificar: TButton
+    Left = 16
+    Top = 184
+    Width = 177
+    Height = 25
+    Caption = 'Verifica Horarios...'
+    TabOrder = 4
+    OnClick = btVerificarClick
+  end
+  object cbxMarcados: TComboBox
+    Left = 408
+    Top = 35
+    Width = 97
+    Height = 21
+    Style = csDropDownList
+    Enabled = False
+    TabOrder = 1
+    OnSelect = exibeConsultaAgendada
+  end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 56
+    Top = 32
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 72
+    Top = 112
+  end
+end

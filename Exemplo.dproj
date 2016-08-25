@@ -99,6 +99,12 @@
             <Form>Form9</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="EntityObjects.Firedac.pas"/>
+        <DCCReference Include="EntityObjects.Base.pas"/>
+        <DCCReference Include="EntityObjects.DbxExpress.pas"/>
+        <DCCReference Include="EntityObjects.ADO.pas"/>
+        <DCCReference Include="EntityObjects.SQLDb.pas"/>
+        <None Include="Exemplo.todo"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -124,6 +130,12 @@
                 <DeployFile LocalName="Win32\Debug\Exemplo.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>Exemplo.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Exemplo.todo" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

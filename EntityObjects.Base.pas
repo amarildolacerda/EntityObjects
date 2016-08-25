@@ -32,9 +32,13 @@
   =  sem alterações significativas
 
   24/08/2016  =    por: Amarildo Lacerda
-  feito separação do codigo por UNIT para permitir acoplar
-  drivers de banco de dados diverentes na mesma estrutura;
-  não foi adicionado novo recurso (somente preparação)
+                   feito separação do codigo por UNIT para permitir acoplar
+                   drivers de banco de dados diverentes na mesma estrutura;
+                   não foi adicionado novo recurso (somente preparação)
+              +    incluido SetConnectionsString metodo para superte a Interface.
+              +    incluido novo construtor base (sem parametros)
+              *    alterado o constructor que passa parametros para secundário
+              +    incluido procedure INIT para permitir iniciar algum recuros no create;
 
 
 }
@@ -85,6 +89,11 @@ type
   TCommaTextOptions = set of (ctoNames, ctoValues);
   TEntityState = (estReady, estLoading, estEditing);
 
+
+  TCustomEntityConnection = class;
+  TCustomEntityConnectionClass = class of TCustomEntityConnection;
+
+
   { TCustomEntityConnection }
   TCustomEntityConnection = class(TInterfacedObject, IEntityConnection)
   private
@@ -93,8 +102,11 @@ type
     Log_id: integer;
     procedure SaveLog(Strings: TStrings);
 {$ENDIF}
+  protected
+    procedure Init;virtual;
   public
-    constructor create;
+    constructor create; overload;virtual;
+    constructor create( _SetConnectionString:string);overload;virtual;
     destructor destroy; override;
     function Settings: TEntitySettings; virtual;
     function ExecuteCommand(const command: string; openQuery: Boolean)
@@ -104,6 +116,7 @@ type
     procedure SetConnectionString(const _ConnectionString: string);
       virtual; abstract;
   end;
+
 
 implementation
 
@@ -122,7 +135,8 @@ end;
 
 constructor TCustomEntityConnection.create;
 begin
-  inherited;
+  inherited create;
+  Init;
   f_Settings := TEntitySettings.create;
   with f_Settings do
   begin
@@ -136,10 +150,22 @@ begin
 
 end;
 
+
+constructor TCustomEntityConnection.create(_SetConnectionString: string);
+begin
+   Create;
+   SetConnectionString(_SetConnectionString);
+end;
+
 destructor TCustomEntityConnection.destroy;
 begin
   f_Settings.Free;
   inherited;
+end;
+
+procedure TCustomEntityConnection.Init;
+begin
+
 end;
 
 function TCustomEntityConnection.Settings: TEntitySettings;

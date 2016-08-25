@@ -1,0 +1,1 @@
+{TODO -oAmarildo Lacerda -cADO : usar where 1 = 0 causa o não uso de indice penalizando o banco de dados.}

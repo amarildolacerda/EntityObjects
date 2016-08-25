@@ -30,7 +30,7 @@ procedure TForm9.FormCreate(Sender: TObject);
 var conn:IEntityConnection;
 begin
    FEntity := TEntity.create;
-   conn := TEntityConnectionFiredac.Create('DriverID=FB;ServerName=localhost;Database=c:\dados\angelica3.sqlite;user=sysdba;password=masterkey');
+   conn := TEntityConnectionFiredac.Create('DriverID=SQLITE,ServerName=localhost,Database=agenda.sqlite,user_name=sysdba,password=masterkey');
    FEntity.EntityConnection := conn;
 end;
 

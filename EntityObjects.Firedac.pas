@@ -32,8 +32,8 @@
   =  sem alterações significativas
 
   24/08/2016  =    por: Amarildo Lacerda
-  Novo codigo
-
+                   Novo codigo
+              *    Alterado o Constructor
 }
 
 unit EntityObjects.Firedac;
@@ -44,7 +44,7 @@ interface
 
 uses
   System.Classes, System.SysUtils, Data.DB, EntityObjects.Base
-{$IFDEF DELPHI_XE_SUP}
+{$IFDEF FIREDAC}
     , Firedac.Stan.Intf, Firedac.Stan.Option,
   Firedac.Stan.Param, Firedac.Stan.Error, Firedac.DatS, Firedac.Phys.Intf,
   Firedac.DApt.Intf, Firedac.Stan.Async, Firedac.DApt, Firedac.UI.Intf,
@@ -52,6 +52,7 @@ uses
   Firedac.Comp.Client, Firedac.Comp.DataSet
 {$ENDIF};
 
+{$ifdef FIREDAC}
 type
   TEntityConnectionFiredac = class(TCustomEntityConnection)
   private
@@ -59,7 +60,8 @@ type
     function AllFields(const TableName: string): TStringList;
     procedure ClearDataSets;
   public
-    constructor Create(const _ConnectionString: string);
+    procedure Init;override;
+    constructor Create;override;
     destructor Destroy; override;
     function ExecuteCommand(const ACommand: string; openQuery: Boolean)
       : TDataSet; override;
@@ -67,17 +69,18 @@ type
       : TStringList; override;
     procedure SetConnectionString(const _ConnectionString: string); override;
   end;
+{$endif}
 
 implementation
 
-{$IFDEF DELPHI_XE_SUP}
+{$IFDEF FIREDAC}
 
 const
   TemporaryTagID = 397;
 
   { TEntityConnectionFiredac }
 
-constructor TEntityConnectionFiredac.Create(const _ConnectionString: string);
+constructor TEntityConnectionFiredac.Create();
 begin
   inherited Create;
   FConnection := TFDConnection.Create(nil);
@@ -182,6 +185,12 @@ begin
   end;
 end;
 
-{$ENDIF}
 
+{ TEntityConnectionFiredac }
+
+procedure TEntityConnectionFiredac.init;
+begin
+end;
+
+{$endif}
 end.

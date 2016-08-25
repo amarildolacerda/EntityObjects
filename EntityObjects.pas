@@ -201,6 +201,8 @@ type
     property EntityConnection: IEntityConnection read FEntityConnection
       write SetEntityConnection;
     constructor Create; overload; virtual;
+    constructor create( AConnectionClass:TCustomEntityConnectionClass );overload;virtual;
+
     destructor Destroy; override;
     function AddField(const Name: string; FieldType: TFieldType;
       isPrimaryKey: Boolean = false; Size: integer = 0): TEntityField;
@@ -252,6 +254,7 @@ end;
 
 constructor TEntity.Create;
 begin
+  inherited create;
   FItems := TList.Create();
   FConditionList := TConditionList.Create;
   F_IsEmpty := true;
@@ -435,6 +438,13 @@ begin
       Result := Result + AppendField('=') + AppendValue();
     end;
   end; // for
+end;
+
+constructor TEntity.Create(AConnectionClass: TCustomEntityConnectionClass);
+begin
+    Create;
+    if assigned(AConnectionClass) then
+       EntityConnection := AConnectionClass.create;
 end;
 
 function TEntity.getPrimaryKey: TEntityField;

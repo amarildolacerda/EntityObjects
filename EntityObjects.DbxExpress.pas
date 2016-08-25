@@ -32,10 +32,10 @@
   =  sem alterações significativas
 
   24/08/2016  =    por: Amarildo Lacerda
-  feito separação do codigo por UNIT para permitir acoplar
-  drivers de banco de dados diverentes na mesma estrutura;
-  não foi adicionado novo recurso (somente preparação)
-
+                   feito separação do codigo por UNIT para permitir acoplar
+                   drivers de banco de dados diverentes na mesma estrutura;
+                   não foi adicionado novo recurso (somente preparação)
+              *    Alterado o construtor
 
 }
 
@@ -59,7 +59,8 @@ type
     function AllFields(const TableName: string): TStringList;
     procedure ClearDataSets;
   public
-    constructor Create(const _ConnectionString: string);
+    procedure Init; override;
+    constructor Create();
     destructor Destroy; override;
     function ExecuteCommand(const command: string; openQuery: Boolean)
       : TDataSet; override;
@@ -77,11 +78,15 @@ implementation
 const
   TemporaryTagID = 397;
 
-constructor TEntityConnectionDbExpress.Create(const _ConnectionString: string);
+procedure TEntityConnectionDbExpress.Init;
+begin
+
+end;
+
+constructor TEntityConnectionDbExpress.Create();
 begin
   inherited Create;
   FConnection := TSQLConnection.Create(nil);
-  SetConnectionString(_ConnectionString);
 end;
 
 procedure TEntityConnectionDbExpress.SetConnectionString
@@ -130,13 +135,14 @@ begin
       ExecSQL;
   end; // with
   if not openQuery then
-    FreeAndNil(Result);   { Cuidado ... funcionamento hibrido da função }
+    FreeAndNil(Result); { Cuidado ... funcionamento hibrido da função }
 end;
 
 function TEntityConnectionDbExpress.AllFields(const TableName: string)
   : TStringList;
 begin
-  with ExecuteCommand('SELECT * FROM ' + TableName + ' WHERE 1 = 0', true) do   { nao é bom esta where   1=0 - sem sugestao ainda  }
+  with ExecuteCommand('SELECT * FROM ' + TableName + ' WHERE 1 = 0', true)
+    do { nao é bom esta where   1=0 - sem sugestao ainda }
   begin
     Tag := TemporaryTagID;
     Result := FieldDefList;

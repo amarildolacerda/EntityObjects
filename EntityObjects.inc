@@ -6,7 +6,7 @@
 // {$define ENTITY_LOG_SQL} // uncomment to save SQL commands for debug
 
 {$IFDEF VER310}
-{$DEFINE DELPHI_XE_SUP} // Berlin 10.1
+  {$DEFINE DELPHI_XE_SUP} // Berlin 10.1
 {$ENDIF}
 
 
@@ -41,6 +41,12 @@
 {$IFDEF DELPHI_XE_SUP}
 {$DEFINE EQUALS_EXISTS}
 {$ENDIF}
+
+
+
+ {$IFDEF DELPHI_XE_SUP}
+     {$define FIREDAC}
+ {$ENDIF}
 
 
 

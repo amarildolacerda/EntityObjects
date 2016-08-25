@@ -32,10 +32,10 @@
   =  sem alterações significativas
 
   24/08/2016  =    por: Amarildo Lacerda
-  feito separação do codigo por UNIT para permitir acoplar
-  drivers de banco de dados diverentes na mesma estrutura;
-  não foi adicionado novo recurso (somente preparação)
-
+                   feito separação do codigo por UNIT para permitir acoplar
+                   drivers de banco de dados diverentes na mesma estrutura;
+                   não foi adicionado novo recurso (somente preparação)
+              *    alterado o construtor
 
 }
 
@@ -56,7 +56,8 @@ type
     function AllTables: TStringList;
     function AllFields(const TableName: string): TStringList;
   public
-    constructor Create(const _ConnectionString: string);
+   procedure Init;override;
+   constructor Create();
     destructor Destroy; override;
     function ExecuteCommand(const command: string; openQuery: Boolean)
       : TDataSet; override;
@@ -116,11 +117,15 @@ begin
   end;
 end;
 
-constructor TEntityConnectionADO.Create(const _ConnectionString: string);
+
+procedure TEntityConnectionADO.Init;
+begin
+end;
+
+constructor TEntityConnectionADO.Create();
 begin
   inherited Create;
   FConnection := TADOConnection.Create(nil);
-  SetConnectionString(_ConnectionString);
 end;
 
 procedure TEntityConnectionADO.SetConnectionString
